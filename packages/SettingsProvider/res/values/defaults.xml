@@ -347,4 +347,7 @@
 
     <!-- Default for Settings.Global.TETHER_DUN_REQUIRED -->
     <integer name="def_tether_dun_required">0</integer>
+
+    <!-- Default value for the notification shade blur radius. -->
+    <integer name="def_shade_blur_radius">17</integer>
 </resources>

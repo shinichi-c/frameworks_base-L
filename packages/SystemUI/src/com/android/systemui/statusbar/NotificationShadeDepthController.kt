@@ -242,10 +242,11 @@ constructor(
         }
 
     private fun updateMaxBlurRadius() {
+        val fallbackForBootRace = 17
         val radiusDpSetting = Settings.System.getIntForUser(
                 context.contentResolver,
                 "shade_blur_radius",
-                17,
+                fallbackForBootRace,
                 UserHandle.USER_CURRENT
         )
 
