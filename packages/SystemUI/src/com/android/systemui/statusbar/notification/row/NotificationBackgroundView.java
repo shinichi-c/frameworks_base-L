@@ -94,10 +94,9 @@ public class NotificationBackgroundView extends View implements Dumpable,
 
         if (notificationRowTransparency()) {
             mNormalColor = isTransparent ? SurfaceEffectColors.surfaceEffect1(getContext())
-                    : mContext.getColor(com.android.internal.R.color.materialColorSurfaceContainerHigh);
+                    : mContext.getColor(R.color.notification_bg_color);
         } else  {
-            mNormalColor = mContext.getColor(
-                    com.android.internal.R.color.materialColorSurfaceContainerHigh);
+            mNormalColor = mContext.getColor(R.color.notification_bg_color);
         }
         mFocusOverlayStroke = getResources().getDimension(R.dimen.notification_focus_stroke_width);
     }
